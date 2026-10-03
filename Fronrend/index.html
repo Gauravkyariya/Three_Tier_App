@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Management</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Employee Management System</h1>
+
+        <p>Three Tier AWS Application</p>
+
+    </header>
+
+
+    <main>
+
+        <section class="form-container">
+
+            <h2>Add Employee</h2>
+
+            <form id="employeeForm">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Employee Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Email"
+                    required
+                >
+
+                <input
+                    type="text"
+                    id="department"
+                    placeholder="Department"
+                    required
+                >
+
+                <button type="submit">
+                    Add Employee
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section class="employee-container">
+
+            <h2>Employees</h2>
+
+            <button onclick="loadEmployees()">
+                Refresh
+            </button>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="employeeTable">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
