@@ -1,7 +1,4 @@
-const API_URL = "http://YOUR_BACKEND_IP:3000";
-
-
-// Load employees
+const API_URL = "http://YOUR_BACKEND_IP:3000"; // Load employees
 async function loadEmployees() {
 
     try {
